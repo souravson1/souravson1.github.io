@@ -375,8 +375,14 @@ section .title::after{
 .skills-content .right .js::before{
     width: 80%;
 }
+.skills-content .right .vue::before{
+    width: 50%;
+}
 .skills-content .right .php::before{
     width: 70%;
+}
+.skills-content .right .laravel::before{
+    width: 50%;
 }
 .skills-content .right .mysql::before{
     width: 70%;
