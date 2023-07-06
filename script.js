@@ -34,14 +34,20 @@ $(document).ready(function(){
     });
 
     // typing text animation script
-    var typed = new Typed(".typing", {
+    var typed1 = new Typed(".typing", {
         strings: ["Full-Stack Developer", "Freelancer", "Programmer", "Web Designer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
-    var typed = new Typed(".typing-2", {
+    var typed2 = new Typed(".typing-2", {
+        strings: ["Full-Stack Developer", "Freelancer", "Programmer", "Web Designer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+    var typed3 = new Typed(".typing-3", {
         strings: ["Full-Stack Developer", "Freelancer", "Programmer", "Web Designer"],
         typeSpeed: 100,
         backSpeed: 60,
@@ -61,3 +67,29 @@ $(document).ready(function(){
         }
     });
 });
+
+const tl = gsap.timeline({scrollTrigger:{
+    trigger: '#about-animate',
+    // markers: true,
+    start: "50% 50%",
+    end: "100% 50%",
+    scrub:2,
+    pin: true,
+}});
+
+tl.to('#about-top',{
+    top: '-50%'
+}, 'a')
+.to('#about-bottom',{
+    bottom: '-50%'
+}, 'a')
+.to('#top-h1',{
+    top: '110%'
+}, 'a')
+.to('#bottom-h1',{
+    bottom: '35%'
+}, 'a')
+.to('#about-animate #about-center-p',{
+    marginTop: 0
+}, 'a')
+
