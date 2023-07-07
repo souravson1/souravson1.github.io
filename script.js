@@ -78,31 +78,20 @@ const tl = gsap.timeline({scrollTrigger:{
 }});
 
 tl.to('#about-top',{
-    top: '-50%'
+    top: '-50vh'
 }, 'a')
 .to('#about-bottom',{
-    bottom: '-50%'
+    bottom: '-50vh'
 }, 'a')
 .to('#top-h1',{
-    top: '110%'
+    top: '58vh'
 }, 'a')
 .to('#bottom-h1',{
-    bottom: '35%'
+    bottom: '14vh'
 }, 'a')
 .to('#about-animate #about-center-p',{
     marginTop: 0
 }, 'a')
-
-gsap.from(['.html', '.css', '.js', '.vue', '.php', '.laravel', '.mysql'],{
-    width: "0%",
-    duration: 1,
-    stagger: 0.1,
-    scrollTrigger:{
-        trigger: ".mysql",
-        scroller: "body",
-        scrub: 2
-    }
-})
 
 const tl2 = gsap.timeline({scrollTrigger:{
     trigger: '#animate-project',
@@ -139,4 +128,13 @@ tl2.to('#animate-project #card-two',{
     width: "70%",
     height: "70vh"
 },'c')
+
+gsap.from(['.html', '.css', '.js', '.vue', '.php', '.laravel', '.mysql'],{
+    width: "0%",
+    duration: 1,
+    stagger: 0.1,
+    scrollTrigger:{
+        trigger: ".html",
+    }
+})
 

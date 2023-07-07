@@ -281,6 +281,7 @@ section .title::after{
     width: 100%;
     height: 100vh;
     background-color: #000;
+    font-family: 'Poppins', sans-serif;
 }
 #about-animate #about-bottom{
     position: absolute;
@@ -290,7 +291,7 @@ section .title::after{
     background-color: #fff;
     overflow: hidden;
 }
-#about-animate h1{
+#about-animate h2{
     font-size: 8vw;
     position: absolute;
     font-family: 'montserrat';
@@ -321,7 +322,6 @@ section .title::after{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
-    font-family: 'Ubuntu', sans-serif;
 }
 #about-animate #about-center-p .typing-3{
     color: crimson;
@@ -789,6 +789,25 @@ footer span a:hover{
     }
     .services .serv-content .card{
         width: 100%;
+    }
+    #about-animate #about-center-p .text{
+        width: 80%;
+        font-size: 19px;
+    }
+    #about-animate #about-center-p p{
+        width: 80%;
+        text-align: justify;
+    }
+    #animate-project h1 {
+        font-size: 12vw;
+    }
+    #animate-project .text-img{
+        width: 15vw;
+        height: 15vw;
+    }
+    #animate-project .cards-project{
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }
 
