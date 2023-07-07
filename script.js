@@ -98,7 +98,45 @@ gsap.from(['.html', '.css', '.js', '.vue', '.php', '.laravel', '.mysql'],{
     duration: 1,
     stagger: 0.1,
     scrollTrigger:{
-        trigger: ".html",
+        trigger: ".mysql",
+        scroller: "body",
+        scrub: 2
     }
 })
+
+const tl2 = gsap.timeline({scrollTrigger:{
+    trigger: '#animate-project',
+    // markers: true,
+    start: "38% 50%",
+    end: "100% 50%",
+    scrub: 2,
+    pin: true,
+}});
+
+tl2.to('#animate-project .text',{
+    top: "-15%"
+},'a')
+tl2.to('#animate-project #card-one',{
+    top: "40%"
+},'a')
+tl2.to('#animate-project #card-two',{
+    top: "100%"
+},'a')
+tl2.to('#animate-project #card-two',{
+    top: "45%"
+},'b')
+tl2.to('#animate-project #card-one',{
+    width: "65%",
+    height: "65vh"
+},'b')
+tl2.to('#animate-project #card-three',{
+    top: "140%"
+},'b')
+tl2.to('#animate-project #card-three',{
+    top: "52%"
+},'c')
+tl2.to('#animate-project #card-two',{
+    width: "70%",
+    height: "70vh"
+},'c')
 

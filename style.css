@@ -331,6 +331,67 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
 }
 
+#animate-project{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 150vh;
+    position: relative;
+    background-color: #111;
+}
+#animate-project .cards-project{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+}
+#animate-project #card-one{
+    top: 130%;
+    background-image: url(./images/netflix-snap.png);
+    
+}
+#animate-project #card-two{
+    top: 230%;
+    background-image: url(./images/mynxtrig-snap.png);
+}
+#animate-project #card-three{
+    top: 250%;
+    background-image: url(./images/socialmedia-snap.png);
+}
+#animate-project .text{
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#animate-project .text-img{
+    width: 5vw;
+    height: 5vw;
+    background-image: url(./images/about.png);
+    background-size: cover;
+    background-position: center;
+}
+#animate-project h1{
+    font-size: 3vw;
+    color: #fff;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+#animate-project p{
+    width: 60%;
+    color: #fff;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
 /* services section styling */
 .services{
     position: relative;
