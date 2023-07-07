@@ -93,3 +93,12 @@ tl.to('#about-top',{
     marginTop: 0
 }, 'a')
 
+gsap.from(['.html', '.css', '.js', '.vue', '.php', '.laravel', '.mysql'],{
+    width: "0%",
+    duration: 1,
+    stagger: 0.1,
+    scrollTrigger:{
+        trigger: ".html",
+    }
+})
+
