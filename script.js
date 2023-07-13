@@ -41,12 +41,6 @@ $(document).ready(function(){
         loop: true
     });
 
-    var typed2 = new Typed(".typing-2", {
-        strings: ["Full-Stack Developer", "Freelancer", "Programmer", "Web Designer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
     var typed3 = new Typed(".typing-3", {
         strings: ["Full-Stack Developer", "Freelancer", "Programmer", "Web Designer"],
         typeSpeed: 100,
