@@ -219,49 +219,6 @@ section .title::after{
     filter: brightness(90%);
 }
 
-/* about section styling */
-.about .title::after{
-    content: "who i am";
-}
-.about .about-content .left{
-    width: 45%;
-}
-.about .about-content .left img{
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 6px;
-}
-.about .about-content .right{
-    width: 55%;
-}
-.about .about-content .right .text{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.about .about-content .right .text span{
-    color: crimson;
-}
-.about .about-content .right p{
-    text-align: justify;
-}
-.about .about-content .right a{
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
-.about .about-content .right a:hover{
-    color: crimson;
-    background: none;
-}
 #about-animate{
     width: 100%;
     height: 100vh;
@@ -316,6 +273,22 @@ section .title::after{
     justify-content: center;
     flex-direction: column;
     color: #fff;
+}
+#about-animate #about-center-p a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+#about-animate #about-center-p a:hover{
+    color: crimson;
+    background: none;
 }
 #about-animate #about-center-p .text{
     width: 45%;
@@ -569,7 +542,7 @@ section .title::after{
 }
 .owl-dot{
     height: 13px;
-    width: 10vh;
+    width: 13px;
     margin: 5px;
     outline: none!important;
     border-radius: 50%;
